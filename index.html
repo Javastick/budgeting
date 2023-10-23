@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>budgeting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="input">
+            <h2>Berapa pemasukan hari ini</h2>
+            <form action="">
+                <input type="number" name="" id="pemasukan">
+                <input type="submit" value="Hitung" id="submit" onclick="hitung(); return false;">
+            </form>
+        </div>
+        <div class="output">
+            <table>
+                <tr class="tabtit">
+                    <th>%</th>
+                    <th class="hasil">Hasil</th>
+                    <th class="ket">Keterangan</th>
+                </tr>
+                <tr>
+                    <th>40%</th>
+                    <th id="fourthy" class="hasil"></th>
+                    <th class="ket">Dana untuk Kebutuhan utama (Bensin)</th>
+                </tr>
+                <tr>
+                    <th>30%</th>
+                    <th id="threety" class="hasil"></th>
+                    <th class="ket">Nabung atau investasi</th>
+                </tr>
+                <tr>
+                    <th>20%</th>
+                    <th id="twenty" class="hasil"></th>
+                    <th class="ket">Jajan untuk kebutuhan nafsu</th>
+                </tr>
+                <tr>
+                    <th>10%</th>
+                    <th id="ten" class="hasil"></th>
+                    <th class="ket">Dana darurat. JANGAN GUNAKAN SEMBARANGAN!</th>
+                </tr>
+                <tr class="sisa">
+                    <th id="sisa" colspan="2">-</th>
+                    <th>Ini adalah sisa, kamu bebas menggunakanya</th>
+                </tr>
+            </table>
+        </div>
+        <div class="valid">
+            <p>Apakah anda ingin memasukan pembagian uang diatas ke database?</p>
+                <button class="button" onclick="yes(); return false;">Ya</button>
+                <button class="button">Tidak</button>
+        </div>
+        <div id="console">
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="data.js"></script>
+</body>
+</html>
